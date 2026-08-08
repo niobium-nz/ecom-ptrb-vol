@@ -70,7 +70,7 @@ describe("canonical third-party script components", () => {
       "https://assets.store.niobium.co.nz/order.js?siteKey=key%20value",
       "https://assets.notification.niobium.co.nz/subscribe.js?siteKey=key%20value",
       "https://assets.notification.niobium.co.nz/contact-us.js?siteKey=key%20value",
-      "https://assets.notification.niobium.co.nz/track.js?siteKey=key%20value",
+      "https://assets.store.niobium.co.nz/track.js?siteKey=key%20value",
       "https://assets.store.niobium.co.nz/quote.js?siteKey=plain",
     ]);
     for (const script of scripts.slice(0, 5)) {

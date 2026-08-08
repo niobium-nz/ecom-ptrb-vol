@@ -6,7 +6,7 @@ const quoteScript = "https://assets.store.niobium.co.nz/quote.js";
 const orderScript = "https://assets.store.niobium.co.nz/order.js";
 const subscribeScript = "https://assets.notification.niobium.co.nz/subscribe.js";
 const contactScript = "https://assets.notification.niobium.co.nz/contact-us.js";
-const trackScript = "https://assets.notification.niobium.co.nz/track.js";
+const trackScript = "https://assets.store.niobium.co.nz/track.js";
 
 function withSiteKey(src: string, siteKey: string): string {
   return `${src}?siteKey=${encodeURIComponent(siteKey)}`;
