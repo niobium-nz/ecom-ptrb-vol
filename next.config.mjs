@@ -55,7 +55,6 @@ const nextConfig = {
   logging: {
     browserToTerminal: "warn",
   },
-  productionBrowserSourceMaps: true,
 };
 
 export default nextConfig;
