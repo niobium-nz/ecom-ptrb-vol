@@ -1,0 +1,61 @@
+[
+  {
+    "source_offer_key": "single_unit_offer",
+    "offer_option_key": "1",
+    "option_configuration": [
+      {
+        "listing": 1,
+        "option": "Default",
+        "quantity": 1
+      }
+    ],
+    "recommended": false,
+    "name": "Starter Board",
+    "description": "1 x PawTrim Reward Board. Entry offer for one dog or one room; keep it available for low-friction testing, but do not make it the default visual selection on the page.",
+    "default_price": {
+      "amount_cents": 2495,
+      "currency": "AUD"
+    }
+  },
+  {
+    "source_offer_key": "best_seller_bundle",
+    "offer_option_key": "2",
+    "option_configuration": [
+      {
+        "listing": 1,
+        "option": "Default",
+        "quantity": 2
+      },
+      {
+        "listing": 2,
+        "option": "Default",
+        "quantity": 4
+      }
+    ],
+    "recommended": true,
+    "name": "2-Board Home Set",
+    "description": "2 x PawTrim Reward Boards. Best for two dogs, two main living areas, or one everyday board plus a second board for routine consistency; saves A$29.95 vs buying two singles.",
+    "default_price": {
+      "amount_cents": 3995,
+      "currency": "AUD"
+    }
+  },
+  {
+    "source_offer_key": "higher_aov_bundle",
+    "offer_option_key": "3",
+    "option_configuration": [
+      {
+        "listing": 1,
+        "option": "Default",
+        "quantity": 3
+      }
+    ],
+    "recommended": false,
+    "name": "3-Board Household Pack",
+    "description": "3 x PawTrim Reward Boards. Best for multi-dog homes, upstairs/downstairs placement, or gifting one to another dog owner; saves A$64.90 vs buying three singles.",
+    "default_price": {
+      "amount_cents": 5495,
+      "currency": "AUD"
+    }
+  }
+]

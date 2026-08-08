@@ -1,0 +1,52 @@
+name: Test environment
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches-ignore:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality-and-deploy:
+    runs-on: ubuntu-latest
+    environment: test
+    env:
+      APP_NAME: niobiumecomm-ptrb-vol-test
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      TENANT_ID: ${{ vars.TENANT_ID }}
+      GOOGLE_RECAPTCHA_SITE_KEY: ${{ vars.GOOGLE_RECAPTCHA_SITE_KEY }}
+      STORE_INTEGRATION_ENDPOINT: ${{ vars.STORE_INTEGRATION_ENDPOINT }}
+      NOTIFICATION_INTEGRATION_ENDPOINT: ${{ vars.NOTIFICATION_INTEGRATION_ENDPOINT }}
+      STRIPE_PUBLIC_KEY: ${{ vars.STRIPE_PUBLIC_KEY }}
+      SHIPPING_OPTION_ID: ${{ vars.SHIPPING_OPTION_ID }}
+      TARGET_COUNTRY: AU
+      FALLBACK_COUPON: ${{ vars.FALLBACK_COUPON }}
+      META_PIXEL_ID: ${{ vars.META_PIXEL_ID }}
+      GOOGLE_TAG: ${{ vars.GOOGLE_TAG }}
+      CLARITY_ID: ${{ vars.CLARITY_ID }}
+      FACEBOOK_URL: ${{ vars.FACEBOOK_URL }}
+      INSTAGRAM_URL: ${{ vars.INSTAGRAM_URL }}
+      CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci --strict-allow-scripts
+      - run: npm run deps:health
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/export-offer-env.mjs
+      - run: npm run quality
+      - run: npm run deploy

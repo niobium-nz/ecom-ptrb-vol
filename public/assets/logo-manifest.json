@@ -1,0 +1,45 @@
+{
+  "sourceFile": "source-assets/logo.svg",
+  "sourceHash": "b81663b3b6b3b8cbcf61f1bf92e5423833df9958c011fcb4e64b6922135f66ec",
+  "inspection": {
+    "black": 0,
+    "white": 1,
+    "transparent": 0,
+    "defaultBlack": 1,
+    "viewBox": [
+      0,
+      0,
+      503,
+      425
+    ]
+  },
+  "dimensions": {
+    "width": 95,
+    "height": 80,
+    "cssWidth": 47,
+    "cssHeight": 40,
+    "density": 2
+  },
+  "variants": [
+    {
+      "themeColor": "#1f6e6e",
+      "width": 95,
+      "height": 80,
+      "transparentPixels": 4535,
+      "visiblePixels": 3065,
+      "opaqueWhitePixels": 0,
+      "wrongVisibleColorPixels": 0,
+      "outputFile": "public/assets/logo-primary.png"
+    },
+    {
+      "themeColor": "#f7f3ea",
+      "width": 95,
+      "height": 80,
+      "transparentPixels": 4535,
+      "visiblePixels": 3065,
+      "opaqueWhitePixels": 0,
+      "wrongVisibleColorPixels": 0,
+      "outputFile": "public/assets/logo-inverse.png"
+    }
+  ]
+}

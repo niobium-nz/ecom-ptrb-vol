@@ -1,0 +1,28 @@
+# dependencies
+/node_modules/
+
+# Next.js and static export
+/.next/
+/out/
+
+# tests and coverage
+/coverage/
+/playwright-report/
+/test-results/
+
+# local environment files
+.env
+.env.local
+.env.*.local
+.env.generated
+
+# local tooling
+*.log
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+/.vscode/.debug-profile/
+
+# Cloudflare
+/.wrangler/
+/.dev.vars

@@ -1,0 +1,57 @@
+{
+  "short_product_name": "ptrb-vol",
+  "target_country": "AU",
+  "product_name": "PawTrim Reward Board",
+  "brand_system": {
+    "brand_name": "Niobium Studio",
+    "description": "ANZ local online pet shop for pet essentials, treats & toys. Quality products for happy paws, delivered ANZ-wide!",
+    "logo_file": "source-assets/logo.svg",
+    "primary_color": "#1F6E6E",
+    "secondary_color": "#F7F3EA",
+    "accent_color": "#F4A261",
+    "logo_inverse_color": "#F7F3EA",
+    "font_strategy": "system fonts only"
+  },
+  "shipping_details": {
+    "tracked": true,
+    "carrier_delivery_estimate": "7 - 14 business days",
+    "tracking_message": "Tracking details are emailed after dispatch."
+  },
+  "vendor_integration": {
+    "tenant_id": "de8b3e50-abf6-4cdd-9269-f2472a1020ad",
+    "google_recaptcha_site_key": "6Lc0jFgrAAAAAIqRdx-gR0yaFs5Nhx8DnvqLzY9R",
+    "stripe_public_key": "pk_test_51RSwkoRt21XMpal88MegWydqv4YnluqxPMXXCrh0EGbYJEUokmgwZkHxf18BiCrurjrRaWbqwf0hygdKUBdo5IlP00s8EmNX99",
+    "shipping_option_id": 1,
+    "fallback_coupon": "BUNDLESAVE",
+    "store_integration_endpoint": "https://staging.api.store.niobium.co.nz",
+    "notification_integration_endpoint": "https://staging.api.notification.niobium.co.nz"
+  },
+  "tracking_spec": {
+    "meta_pixel_id": "1225432212563029",
+    "ga4_id": "G-E5ZVT43LYM",
+    "microsoft_clarity": "t6zjrfru2y",
+    "preserve_query_params": ["utm_source", "utm_campaign", "utm_content", "fbclid"]
+  },
+  "trust": {
+    "contact_email": "support@niobium.co.nz",
+    "facebook_url": "https://www.facebook.com/niobiumstudionz",
+    "instagram_url": "https://www.instagram.com/niobium_studio"
+  },
+  "asset_paths": {
+    "hero": "/assets/hero_image_01.png",
+    "offer_packshot": "/assets/offer_packshot_01.png",
+    "how_it_works": "/assets/how_it_works_macro_01.png",
+    "problem_solution": "/assets/problem_solution_visual_01.png",
+    "use_cases": "/assets/use_case_cards_01.png",
+    "demo_sizes": "/assets/demo_gallery_size_01.png",
+    "demo_progress": "/assets/demo_gallery_timer_01.png",
+    "safety": "/assets/safety_fit_graphic_01.png",
+    "final_cta": "/assets/final_cta_lifestyle_01.png"
+  },
+  "logo_assets": {
+    "primary": "/assets/logo-primary.png",
+    "inverse": "/assets/logo-inverse.png",
+    "width": 95,
+    "height": 80
+  }
+}
